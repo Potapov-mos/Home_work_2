@@ -6,3 +6,20 @@
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+
+
+Console.Write("Введите цифру обозначающую день недели: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num <= 5)
+{
+    Console.Write($"{num} -> нет");
+}
+else if (num == 6 || num == 7)
+{
+    Console.Write($"{num} -> да");
+}
+else if (num >= 8)
+{
+    Console.WriteLine("Нет такого дня в неделе!");
+}
