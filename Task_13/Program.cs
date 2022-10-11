@@ -8,3 +8,21 @@
 // 78 -> третьей цифры нет
 
 // 32679 -> 6
+
+
+Console.Write("Введите число не меньше трёх цифр: ");
+int number = Convert.ToInt32(Console.ReadLine());
+    
+if (number >= 999)
+{
+    do
+    {
+        number = number / 10;
+        Console.Write(number);
+    }
+    while (number / 1000 > 0);
+}
+
+int threeDigit = number % 10;
+
+Console.WriteLine($"{number} -> {threeDigit}");
